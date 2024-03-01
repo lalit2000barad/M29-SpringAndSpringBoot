@@ -1,0 +1,63 @@
+module.exports = {
+  mode: "jit",
+  content: [
+    "./src/**/**/*.{js,ts,jsx,tsx,html,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,html,mdx}",
+  ],
+  darkMode: "class",
+  theme: {
+    screens: { md: { max: "1050px" }, sm: { max: "550px" } },
+    extend: {
+      colors: {
+        gray: {
+          50: "#f9fbff",
+          900: "#0d1624",
+          "50_02": "#fafcff",
+          "50_01": "#f8f9fa",
+          "700_11": "#55555511",
+        },
+        blue_gray: {
+          50: "#eaecf0",
+          100: "#d6dae2",
+          200: "#bac1ce",
+          300: "#9ea8ba",
+          400: "#74839d",
+          600: "#5f6c86",
+          700: "#424c5d",
+          800: "#363853",
+          900: "#262b35",
+          "400_01": "#75839d",
+        },
+        black: {
+          900: "#000000",
+          "900_4c": "#0000004c",
+          "900_66": "#00000066",
+          "900_01": "#090b0d",
+        },
+        white: { A700: "#ffffff" },
+        colors4: "#000000ff",
+        red: { 400: "#f14a60", 700: "#d03329", A200: "#ff4b4b" },
+        blue: {
+          200: "#a6c8ff",
+          800: "#0051d5",
+          900: "#003995",
+          A700_01: "#0a58ff",
+          A700: "#0061ff",
+          A200_01: "#4d90ff",
+          A200: "#588af1",
+        },
+        colors1: "#0061ffff",
+        colors: "#262b35ff",
+        colors2: "#74839dff",
+        green: { 600: "#349765" },
+        colors3: "#349765ff",
+      },
+      fontFamily: { gilroy: "Gilroy", opensans: "Open Sans" },
+      boxShadow: { bs: "0px 0px  10px 4px #55555511" },
+      backgroundImage: {
+        gradient: "linear-gradient(90deg ,#00000066,#00000066)",
+      },
+    },
+  },
+  plugins: [require("@tailwindcss/forms")],
+};
